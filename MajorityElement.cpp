@@ -12,7 +12,7 @@ int majorityElement(vector<int>& arr) {
         int count = 0;
 
 
-        for (int j = 0; j < n; j++) {
+        for (int j = i; j < n; j++) {
             if (arr[i] == arr[j]) count++;
         }
 
@@ -25,6 +25,7 @@ int main()
 {
 
     vector<int> arr = { 1,1,2,1,3,5,1 };
+    cout << "\nMajority Element: ";
     cout << majorityElement(arr) << endl;
 
     
